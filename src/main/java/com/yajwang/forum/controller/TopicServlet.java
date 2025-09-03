@@ -47,7 +47,7 @@ public class TopicServlet extends BaseServlet {
 
         PageDTO<Topic> pageDTO = topicService.listTopicPageByCid(cId,page,pageSize);
 
-        System.out.println(pageDTO.toString());
+//        System.out.println(pageDTO.toString());
 
         req.getSession().setAttribute("categoryList", categoryService.list());
 
@@ -95,7 +95,7 @@ public class TopicServlet extends BaseServlet {
 
         PageDTO<Reply> pageDTO = topicService.findReplyPageByTopicId(topicId,page,pageSize);
 
-        System.out.println(pageDTO.toString());
+//        System.out.println(pageDTO.toString());
 
         req.setAttribute("topic", topic);
         req.setAttribute("replyPage", pageDTO);

@@ -15,7 +15,8 @@ public class BaseServlet extends HttpServlet {
 
     /**
      * 子类的Servlet被访问，会调用service方法，但是子类没有重写，那么就会调用母类的service方法
-     *When the Servlet of the subclass is accessed, the service method will be called. However, if the subclass has not been overridden, the service method of the parent class will be called.
+     * When the Servlet of the subclass is accessed, the service method will be called. However, if the subclass has not been overridden, the service method of the parent class will be called.
+     * This here represents the Servlet object currently executing this code. This code dynamically searches for and prepares to call a specific method in the current Servlet object. The name of this method is passed through the HTTP request parameters.
      * @param req
      * @param resp
      * @throws ServletException
